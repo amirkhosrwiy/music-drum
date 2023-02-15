@@ -1,21 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:musical/splash_screen.dart';
 
 void main() {
-  runApp(Application());
+  runApp(MyApp());
 }
 
-class Application extends StatelessWidget {
-  const Application({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return getApplication();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
+    );
   }
 }
 
+// class Application extends StatelessWidget {
+//   const Application({Key? key}) : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return getApplication();
+//   }
+// }
+
 Widget getApplication() {
   return MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: Scaffold(
       backgroundColor: Color.fromARGB(255, 90, 14, 125),
       body: SafeArea(
@@ -25,9 +39,9 @@ Widget getApplication() {
             borderRadius: BorderRadius.all(
               Radius.circular(30.0),
             ),
-            color: Color.fromARGB(255, 115, 165, 226),
+            color: Color(0xff9772FB),
             image: DecorationImage(
-                image: AssetImage('images/2.png'), fit: BoxFit.fitWidth),
+                image: AssetImage('images/1.png'), fit: BoxFit.fitWidth),
           ),
           child: getBody(),
         ),
@@ -51,8 +65,8 @@ Widget getBody() {
                 child: Text(
                   '1',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.5),
-                    fontSize: 50.0,
+                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.9),
+                    fontSize: 100.0,
                   ),
                 ),
               ),
@@ -65,8 +79,8 @@ Widget getBody() {
                 child: Text(
                   '2',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.5),
-                    fontSize: 50.0,
+                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.9),
+                    fontSize: 100.0,
                   ),
                 ),
               ),
@@ -86,8 +100,8 @@ Widget getBody() {
                 child: Text(
                   '3',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 115, 165, 226).withOpacity(0.9),
-                    fontSize: 50.0,
+                    color: Colors.white.withOpacity(0.9),
+                    fontSize: 100.0,
                   ),
                 ),
               ),
@@ -100,8 +114,8 @@ Widget getBody() {
                 child: Text(
                   '4',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 115, 165, 226).withOpacity(0.9),
-                    fontSize: 50.0,
+                    color: Colors.white.withOpacity(0.9),
+                    fontSize: 100.0,
                   ),
                 ),
               ),
@@ -121,8 +135,8 @@ Widget getBody() {
                 child: Text(
                   '5',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.5),
-                    fontSize: 50.0,
+                    color: Colors.white.withOpacity(0.9),
+                    fontSize: 100.0,
                   ),
                 ),
               ),
@@ -135,8 +149,43 @@ Widget getBody() {
                 child: Text(
                   '6',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.5),
-                    fontSize: 50.0,
+                    color: Colors.white.withOpacity(0.9),
+                    fontSize: 100.0,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+      Expanded(
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Expanded(
+              child: TextButton(
+                onPressed: () {
+                  playSound('o2.wav');
+                },
+                child: Text(
+                  '7',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.9),
+                    fontSize: 100.0,
+                  ),
+                ),
+              ),
+            ),
+            Expanded(
+              child: TextButton(
+                onPressed: () {
+                  playSound('o1.wav');
+                },
+                child: Text(
+                  '8',
+                  style: TextStyle(
+                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.9),
+                    fontSize: 100.0,
                   ),
                 ),
               ),
