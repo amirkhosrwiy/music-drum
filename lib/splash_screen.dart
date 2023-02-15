@@ -36,15 +36,76 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
           ),
           Center(
-            child: Text(
-              'Logo App',
-              style: TextStyle(
-                color: Colors.blue,
-                fontSize: 30,
-                fontWeight: FontWeight.bold,
+            child: Image(
+              image: AssetImage(
+                'images/5.png',
               ),
+              width: 200,
             ),
           ),
+// up is logo and animation
+// coments
+
+          Column(
+            children: [
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                    top: 500,
+                    bottom: 0,
+                  ),
+                  child: Text(
+                    'This application was created',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w900,
+                    ),
+                  ),
+                ),
+              ),
+
+// creted text in splash screen
+// creted text in splash screen
+// creted text in splash screen
+
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 20,
+                  bottom: 0,
+                ),
+                child: Text(
+                  'By',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w900,
+                    fontSize: 20,
+                  ),
+                ),
+              ),
+// creted text in splash screen
+// creted text in splash screen
+// creted text in splash screen
+              Padding(
+                padding: const EdgeInsets.only(
+                  top: 10,
+                  bottom: 0,
+                ),
+                child: Text(
+                  'Amir Khosrwiy',
+                  style: TextStyle(
+                    color: Color(0xff89C4E1),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
+                  ),
+                ),
+              ),
+            ],
+          ),
+
+// up is logo and animation
+// coments
+
           Positioned(
             bottom: 20,
             child: Lottie.asset(

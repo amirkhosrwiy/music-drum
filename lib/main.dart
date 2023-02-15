@@ -41,7 +41,10 @@ Widget getApplication() {
             ),
             color: Color(0xff9772FB),
             image: DecorationImage(
-                image: AssetImage('images/1.png'), fit: BoxFit.fitWidth),
+              image: AssetImage('images/2.png'),
+              fit: BoxFit.fitWidth,
+              opacity: (0.8),
+            ),
           ),
           child: getBody(),
         ),
@@ -65,7 +68,7 @@ Widget getBody() {
                 child: Text(
                   '1',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.9),
+                    color: Colors.white.withOpacity(0.7),
                     fontSize: 100.0,
                   ),
                 ),
@@ -79,7 +82,7 @@ Widget getBody() {
                 child: Text(
                   '2',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.9),
+                    color: Colors.white.withOpacity(0.7),
                     fontSize: 100.0,
                   ),
                 ),
@@ -100,7 +103,7 @@ Widget getBody() {
                 child: Text(
                   '3',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withOpacity(0.7),
                     fontSize: 100.0,
                   ),
                 ),
@@ -114,7 +117,7 @@ Widget getBody() {
                 child: Text(
                   '4',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withOpacity(0.7),
                     fontSize: 100.0,
                   ),
                 ),
@@ -135,7 +138,7 @@ Widget getBody() {
                 child: Text(
                   '5',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withOpacity(0.7),
                     fontSize: 100.0,
                   ),
                 ),
@@ -149,7 +152,7 @@ Widget getBody() {
                 child: Text(
                   '6',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withOpacity(0.7),
                     fontSize: 100.0,
                   ),
                 ),
@@ -170,7 +173,7 @@ Widget getBody() {
                 child: Text(
                   '7',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.9),
+                    color: Colors.white.withOpacity(0.7),
                     fontSize: 100.0,
                   ),
                 ),
@@ -184,7 +187,7 @@ Widget getBody() {
                 child: Text(
                   '8',
                   style: TextStyle(
-                    color: Color.fromARGB(255, 101, 26, 136).withOpacity(0.9),
+                    color: Colors.white.withOpacity(0.7),
                     fontSize: 100.0,
                   ),
                 ),
