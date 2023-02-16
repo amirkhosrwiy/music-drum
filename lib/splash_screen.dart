@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(
-      Duration(seconds: 4),
+      Duration(seconds: 6),
       () => Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (BuildContext Context) => getApplication(),
@@ -51,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
               Center(
                 child: Padding(
                   padding: const EdgeInsets.only(
-                    top: 500,
+                    top: 600,
                     bottom: 0,
                   ),
                   child: Text(

@@ -168,7 +168,7 @@ Widget getBody() {
             Expanded(
               child: TextButton(
                 onPressed: () {
-                  playSound('o2.wav');
+                  playSound('p2.wav');
                 },
                 child: Text(
                   '7',
